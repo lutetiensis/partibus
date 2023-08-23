@@ -1,0 +1,25 @@
+[project]
+name = "partibus"
+version = "0.0.1"
+authors = [
+  { name="Example Author", email="author@example.com" },
+]
+dynamic = ["dependencies"]
+description = "A small example package"
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+requires-python = ">= 3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+[project.urls]
+"Homepage" = "https://github.com/lutetiensis/partibus"
+"Bug Tracker" = "https://github.com/lutetiensis/partibus/issues"
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+]

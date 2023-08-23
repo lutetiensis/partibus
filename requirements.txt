@@ -1,0 +1,6 @@
+autopep8
+build
+flask
+flask-cors
+pylint
+pytest
